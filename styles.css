@@ -8,6 +8,39 @@ body {
     color: #fff;
 }
 
+/* Navigation Styles */
+nav {
+    background: #1e1e1e;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e91e63;
+}
+
 header {
     position: relative;
     height: 100vh;
@@ -51,7 +84,7 @@ header p {
 }
 
 main {
-    padding: 2em;
+    padding: 6em 2em 2em; /* Adjusted padding to account for fixed nav */
     max-width: 800px;
     margin: 0 auto;
 }
@@ -67,19 +100,19 @@ section h2 {
     font-size: 1.5em;
 }
 
-.about, .projects, .contact {
+.work, .repositories, .about, .contact {
     background: #1e1e1e;
     padding: 1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
 }
 
-.projects ul {
+.repositories ul {
     list-style-type: none;
     padding: 0;
 }
 
-.projects li {
+.repositories li {
     background: #333;
     margin: 0.5em 0;
     padding: 0.5em;
@@ -87,23 +120,20 @@ section h2 {
     transition: background 0.3s;
 }
 
-.projects li:hover {
+.repositories li:hover {
     background: #444;
 }
 
-.projects a {
+.repositories a {
     text-decoration: none;
     color: #e91e63;
 }
 
 footer {
-    background: #121212;
+    background: #1e1e1e;
     color: #bbb;
     text-align: center;
     padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
 
 a {
@@ -117,6 +147,6 @@ a:hover {
 
 @media (max-width: 600px) {
     main {
-        padding: 1em;
+        padding: 6em 1em 1em;
     }
 }
