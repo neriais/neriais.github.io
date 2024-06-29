@@ -1,153 +1,77 @@
-/* General Styles */
+/* General Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif; /* Choose a modern and readable font */
     margin: 0;
-    padding: 0;
-    background-color: #121212;
-    color: #fff;
+    line-height: 1.6; /* Improve readability */
+    background-color: #f5f5f5; /* Light neutral background */
+    color: #333; /* Dark gray text */
 }
 
-/* Navigation Styles */
+h1, h2, h3 {
+    font-family: 'Roboto Slab', serif; /* Choose a different font for headings for contrast */
+}
+
+a {
+    color: #007bff; /* Blue accent color for links */
+    text-decoration: none;
+}
+
+/* Navigation Styling */
 nav {
-    background: #1e1e1e;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    background-color: #fff; /* White background for navigation */
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
     margin: 0;
     padding: 0;
+    display: flex; /* Arrange navigation items horizontally */
+    justify-content: space-around; /* Evenly space them */
 }
 
 nav li {
-    margin: 0 1em;
+    margin: 0 1rem;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #e91e63;
-}
-
+/* Header Styling */
 header {
-    position: relative;
-    height: 100vh;
-    background: url('path-to-your-banner.jpg') no-repeat center center/cover;
-    text-align: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url('your-header-image.jpg'); /* Choose a relevant and high-quality background image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 8rem 0;
+    color: #fff; /* White text for contrast */
 }
 
 .overlay {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 2em;
-    border-radius: 8px;
-    width: 80%;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 3em;
-    color: #fff;
-}
-
-header p {
-    margin: 0.5em 0 1em;
-    font-size: 1.2em;
-    color: #bbb;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to make text readable */
+    padding: 2rem;
 }
 
 .button {
     display: inline-block;
-    padding: 0.5em 1.5em;
-    background: #e91e63;
+    background-color: #007bff;
     color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background 0.3s ease;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
 }
 
-.button:hover {
-    background: #d81b60;
-}
-
-main {
-    padding: 6em 2em 2em; /* Adjusted padding to account for fixed nav */
-    max-width: 800px;
-    margin: 0 auto;
-}
-
+/* Section Styling */
 section {
-    margin-bottom: 2em;
+    padding: 4rem;
 }
 
 section h2 {
-    border-bottom: 2px solid #ccc; /* Light grey */
-    padding-bottom: 0.5em;
-    margin-bottom: 1em;
-    font-size: 1.5em;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #007bff; /* Add a subtle underline to headings */
 }
 
-.work, .repositories, .about, .contact {
-    background: #1e1e1e;
-    padding: 1em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-}
-
-.repositories ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.repositories li {
-    background: #333;
-    margin: 0.5em 0;
-    padding: 0.5em;
-    border-radius: 4px;
-    transition: background 0.3s;
-}
-
-.repositories li:hover {
-    background: #444;
-}
-
-.repositories a {
-    text-decoration: none;
-    color: #e91e63;
-}
-
+/* Footer Styling */
 footer {
-    background: #1e1e1e;
-    color: #bbb;
     text-align: center;
-    padding: 1em 0;
-}
-
-a {
-    color: #e91e63;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 600px) {
-    main {
-        padding: 6em 1em 1em;
-    }
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
 }
