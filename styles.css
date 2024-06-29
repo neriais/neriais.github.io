@@ -3,8 +3,8 @@ body {
     font-family: 'Open Sans', sans-serif; /* Choose a modern and readable font */
     margin: 0;
     line-height: 1.6; /* Improve readability */
-    background-color: #f5f5f5; /* Light neutral background */
-    color: #333; /* Dark gray text */
+    background-color: #121212; /* Dark background for dark theme */
+    color: #f5f5f5; /* Light gray text */
 }
 
 h1, h2, h3 {
@@ -22,7 +22,7 @@ a:hover {
 
 /* Navigation Styling */
 nav {
-    background-color: #fff; /* White background for navigation */
+    background-color: #1e1e1e; /* Dark background for navigation */
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
@@ -70,7 +70,7 @@ header p {
     color: #bbb;
 }
 
-.button {
+.button, .cta-button {
     display: inline-block;
     background-color: #007bff;
     color: #fff;
@@ -80,14 +80,14 @@ header p {
     transition: background 0.3s ease;
 }
 
-.button:hover {
+.button:hover, .cta-button:hover {
     background-color: #0056b3; /* Darker blue on hover */
 }
 
 /* Section Styling */
 section {
     padding: 4rem 2rem;
-    background-color: #fff;
+    background-color: #1e1e1e;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
     border-radius: 8px;
@@ -105,7 +105,232 @@ section h2 {
 }
 
 .repositories li {
-    background: #f8f9fa;
+    background: #2b2b2b;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 4px;
+    transition:### Simplified HTML and CSS
+
+Let's clean up your HTML and CSS as per your requirements.
+
+#### HTML
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neria Sebastien - Learning Design Architect, AI & Cybersecurity Enthusiast</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Portfolio of Neria Sebastien, a Learning Design Architect specializing in AI and Cybersecurity. Explore projects and get in touch.">
+    <meta name="keywords" content="Neria Sebastien, Learning Design Architect, AI, Cybersecurity, Portfolio, Instructional Design, Higher Education">
+    <meta name="author" content="Neria Sebastien">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://neriais.github.io/">
+    <meta property="og:title" content="Neria Sebastien - Learning Design Architect">
+    <meta property="og:description" content="Portfolio of Neria Sebastien, specializing in AI and Cybersecurity">
+    <meta property="og:image" content="https://neriais.github.io/profile-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://neriais.github.io/">
+    <meta property="twitter:title" content="Neria Sebastien - Learning Design Architect">
+    <meta property="twitter:description" content="Portfolio of Neria Sebastien, specializing in AI and Cybersecurity">
+    <meta property="twitter:image" content="https://neriais.github.io/profile-image.jpg">
+
+    <link rel="canonical" href="https://neriais.github.io/">
+</head>
+<body class="dark-theme">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#repositories">Repositories</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Neria Sebastien</h1>
+            <p>Learning Design Architect, AI & Cybersecurity Enthusiast</p>
+            <a href="mailto:neriasebastien@gmail.com" class="cta-button">Get in touch</a>
+        </div>
+    </header>
+    
+    <main>
+        <section id="work" aria-labelledby="work-heading">
+            <h2 id="work-heading">Work</h2>
+            <p>As a Learning Design Architect with a focus on AI and Cybersecurity, I've had the opportunity to work on several innovative projects:</p>
+            <ul>
+                <li>
+                    <h3>AI-Enhanced Adaptive Learning Platform</h3>
+                    <p>Designed a learning platform that uses AI to personalize content delivery based on student progress and learning styles.</p>
+                </li>
+                <li>
+                    <h3>Cybersecurity Awareness Training Program</h3>
+                    <p>Developed a comprehensive cybersecurity training program for higher education staff, incorporating interactive simulations.</p>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="repositories" aria-labelledby="repositories-heading">
+            <h2 id="repositories-heading">Repositories</h2>
+            <ul>
+                <li><a href="https://github.com/neriais/responsible-ai-course">Responsible AI Course</a></li>
+                <li><a href="https://github.com/neriais/instructional-learning-design">Instructional Learning Design</a></li>
+                <li><a href="https://github.com/neriais/cybersecurity-projects">Cybersecurity Projects</a></li>
+            </ul>
+        </section>
+        
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <img src="profile-image.jpg" alt="Neria Sebastien" class="profile-image">
+            <p>I am a seasoned professional in higher education with over a decade of experience in instructional design and technology integration. My passion lies at the intersection of learning science, artificial intelligence, and cybersecurity.</p>
+            <p>With two master's degrees - one in Educational Technology and another in Cybersecurity - and a doctorate in Instructional Systems Design, I bring a unique blend of pedagogical expertise and technical knowledge to my work.</p>
+            <p>I've dedicated myself to creating innovative, accessible, and secure learning environments that prepare students for the challenges of an increasingly digital world.</p>
+        </section>
+        
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <p>Email: <a href="mailto:neriasebastien@gmail.com">neriasebastien@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/neriasebastien">Neria Sebastien</a></p>
+            <p>Twitter: <a href="https://twitter.com/NeriaSebastien">@NeriaSebastien</a></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Neria Sebastien. All rights reserved.</p>
+    </footer>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Neria Sebastien",
+      "jobTitle": "Learning Design Architect",
+      "url": "https://neriais.github.io/",
+      "sameAs": [
+        "https://linkedin.com/in/neriasebastien",
+        "https://github.com/neriais",
+        "https://twitter.com/NeriaSebastien"
+      ]
+    }
+    </script>
+</body>
+</html>
+CSS
+css
+Copy code
+/* General Styling */
+body {
+    font-family: 'Open Sans', sans-serif; /* Choose a modern and readable font */
+    margin: 0;
+    line-height: 1.6; /* Improve readability */
+    background-color: #121212; /* Dark background for dark theme */
+    color: #f5f5f5; /* Light gray text */
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto Slab', serif; /* Choose a different font for headings for contrast */
+}
+
+a {
+    color: #007bff; /* Blue accent color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #1e1e1e; /* Dark background for navigation */
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Arrange navigation items horizontally */
+    justify-content: space-around; /* Evenly space them */
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Header Styling */
+header {
+    background-image: url('your-header-image.jpg'); /* Choose a relevant and high-quality background image */
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    padding: 8rem 2rem;
+    color: #fff; /* White text for contrast */
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to make text readable */
+    padding: 2rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    color: #fff;
+}
+
+header p {
+    margin: 0.5em 0 1em;
+    font-size: 1.2em;
+    color: #bbb;
+}
+
+.button, .cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.button:hover, .cta-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Section Styling */
+section {
+    padding: 4rem 2rem;
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+section h2 {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #bbb; /* Add a subtle underline to headings */
+    padding-bottom: 0.5rem;
+}
+
+.repositories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.repositories li {
+    background: #2b2b2b;
     margin: 0.5rem 0;
     padding: 0.8rem;
     border-radius: 4px;
@@ -113,43 +338,5 @@ section h2 {
 }
 
 .repositories li:hover {
-    background: #e9ecef;
-}
-
-.repositories a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-.repositories a:hover {
-    color: #0056b3;
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 2rem;
-    background-color: #333;
-    color: #fff;
-}
-
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    header {
-        text-align: center;
-        padding: 4rem 2rem;
-    }
-
-    .button {
-        display: block;
-        margin: 1rem auto;
-    }
-
-    section {
-        padding: 2rem 1rem;
-    }
+    background: #383838;
 }
