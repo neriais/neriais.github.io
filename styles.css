@@ -16,6 +16,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 /* Navigation Styling */
 nav {
     background-color: #fff; /* White background for navigation */
@@ -35,13 +39,17 @@ nav li {
     margin: 0 1rem;
 }
 
+nav a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
 /* Header Styling */
 header {
     background-image: url('your-header-image.jpg'); /* Choose a relevant and high-quality background image */
     background-size: cover;
     background-position: center;
-    text-align: center;
-    padding: 8rem 0;
+    text-align: left;
+    padding: 8rem 2rem;
     color: #fff; /* White text for contrast */
 }
 
@@ -50,22 +58,71 @@ header {
     padding: 2rem;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    color: #fff;
+}
+
+header p {
+    margin: 0.5em 0 1em;
+    font-size: 1.2em;
+    color: #bbb;
+}
+
 .button {
     display: inline-block;
     background-color: #007bff;
     color: #fff;
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 /* Section Styling */
 section {
-    padding: 4rem;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    border-radius: 8px;
 }
 
 section h2 {
     margin-bottom: 2rem;
     border-bottom: 2px solid #007bff; /* Add a subtle underline to headings */
+    padding-bottom: 0.5rem;
+}
+
+.repositories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.repositories li {
+    background: #f8f9fa;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.repositories li:hover {
+    background: #e9ecef;
+}
+
+.repositories a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.repositories a:hover {
+    color: #0056b3;
 }
 
 /* Footer Styling */
@@ -74,4 +131,25 @@ footer {
     padding: 2rem;
     background-color: #333;
     color: #fff;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header {
+        text-align: center;
+        padding: 4rem 2rem;
+    }
+
+    .button {
+        display: block;
+        margin: 1rem auto;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
 }
